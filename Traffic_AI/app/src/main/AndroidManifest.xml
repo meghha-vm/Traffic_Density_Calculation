@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Traffic_AI"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".viewApprovedAmbulance"
+            android:exported="false" />
+        <activity
+            android:name=".ambulanceVieww"
+            android:exported="false" />
+        <activity
+            android:name=".viewApprovedPolice"
+            android:exported="false" />
+        <activity
+            android:name=".policeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".policeViewPage"
+            android:exported="false" />
+        <activity
+            android:name=".viewPolice"
+            android:exported="false"
+            android:label="@string/title_activity_view_police"
+            android:theme="@style/Theme.Traffic_AI" />
+        <activity
+            android:name=".pArray"
+            android:exported="false" />
+        <activity
+            android:name=".parray"
+            android:exported="false"
+            android:label="@string/title_activity_parray"
+            android:theme="@style/Theme.Traffic_AI" />
+        <activity
+            android:name=".policeView"
+            android:exported="false" />
+        <activity
+            android:name=".ambulanceView"
+            android:exported="false" />
+        <activity
+            android:name=".adminHome"
+            android:exported="false" />
+        <activity
+            android:name=".sampleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ambulance"
+            android:exported="false" />
+        <activity
+            android:name=".AmbulanceRegister"
+            android:exported="false" />
+        <activity
+            android:name=".policeRegister"
+            android:exported="false" />
+        <activity
+            android:name=".SELECTION"
+            android:exported="false" />
+        <activity
+            android:name=".trafficControl"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

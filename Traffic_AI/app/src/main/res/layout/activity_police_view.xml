@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:text="name"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/dep"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="dep"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="mobile"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="email"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+
+
+            </TableRow>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="450dp"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                android:backgroundTint="#1b1c24"
+                android:elevation="60dp">
+                <TextView
+                    android:id="@+id/text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+                    <ListView
+                        android:id="@+id/listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp">
+                    </ListView>
+                </TableRow>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</ScrollView>
